@@ -1,0 +1,54 @@
+# =========================
+# Secrets & environment
+# =========================
+.env
+*.env
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# =========================
+# Jupyter / Research
+# =========================
+.ipynb_checkpoints/
+*.ipynb
+
+# =========================
+# Airflow
+# =========================
+logs/
+airflow_logs/
+plugins/__pycache__/
+
+# =========================
+# Data files (local only)
+# =========================
+raw_data/
+*.csv
+*.parquet
+
+# =========================
+# Docker
+# =========================
+**/postgres_data/
+**/metabase_postgres_data/
+
+# =========================
+# OS / Editors
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================
+# Temporary / misc
+# =========================
+*.log
+*.tmp
