@@ -46,16 +46,18 @@ which is the core focus of this project.
 ## Project Structure
 
 quant_data_pipeline/
-├── dags/                  # Airflow DAG definitions
+├── dags/ # Airflow DAG definitions
+│ └── quant_pipeline_dag.py
 ├── project/
-│   ├── ingest/            # Market data ingestion logic
-│   ├── transform/         # Validation, alignment, and prep logic
-│   └── load/              # Database load logic
-├── docker-compose.yml     # Local orchestration
+│ ├── ingest_data.py # Market data ingestion logic
+│ ├── transform_data.py # Validation, alignment, prep logic
+│ └── validate_data.py
+├── docker-compose.yml # Local orchestration
 ├── Dockerfile
+├── Dockerfile.streamlit
 ├── requirements.txt
-├── README.md
-└── .gitignore
+├── requirements_streamlit.txt
+└── README.md
 
 
 ---
