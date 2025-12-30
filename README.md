@@ -25,7 +25,7 @@ which is the core focus of this project.
 
 ## Architecture
 **Ingestion**
-- Market data fetched from external market data APIs
+- Market data fetched from Alpaca APIs
 - 5-minute bars constructed and scheduled using Apache Airflow
 
 **Processing & Validation**
